@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Connect</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="desc">A place where you can market your product around the globe</string>
+    <string name="no_post_yet_n_click_on_to_create">No Post Yet!! \n Click on Add (+) to create</string>
+</resources>

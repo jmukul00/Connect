@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_image_interest"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:cardCornerRadius="10dp"
+        >
+
+    <ImageView
+        android:scaleType="fitXY"
+        android:id="@+id/imageView_interest"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/logo_front"/>
+
+        <ImageView
+            android:scaleType="fitXY"
+            android:id="@+id/imageView_check"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="end"
+            android:layout_margin="10dp"
+            android:tint="@android:color/white"
+            android:visibility="gone"
+            android:src="@drawable/fui_ic_check_circle_black_128dp"/>
+
+
+
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:id="@+id/txt_interest_name"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="InterestName"
+        android:textSize="12dp"
+        android:textColor="@android:color/black"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:layout_below="@id/card_image_interest"
+        android:layout_margin="5dp"
+        />
+
+</RelativeLayout>

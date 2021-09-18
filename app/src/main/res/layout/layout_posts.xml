@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        android:layout_margin="10dp">
+
+
+        <ImageView
+            android:id="@+id/imageView_post"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/image_not_found"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:maxHeight="250dp"
+            />
+
+        <ImageView
+            android:id="@+id/imageView_loading"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/image_not_found"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:maxHeight="250dp"
+            android:visibility="visible"
+            />
+
+
+        <!--<ProgressBar
+            android:id="@+id/progress_myPosts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:progressTint="@color/colorBlue"/>-->
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/txtView_post_title"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="Title"
+        android:textSize="13dp"
+        android:layout_below="@id/card_image"
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="20dp"
+        android:gravity="start"/>
+
+</RelativeLayout>

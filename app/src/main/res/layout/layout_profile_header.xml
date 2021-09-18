@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_below="@+id/img_logout"
+        android:id="@+id/profile_pic"
+        >
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:weightSum="2"
+            >
+
+            <TextView
+                android:id="@+id/txt_followers"
+                android:layout_weight="1"
+                android:fontFamily="@font/sans_regular"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="153K"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:gravity="center|bottom"
+                android:textColor="@android:color/black"
+
+                />
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/sans_regular"
+                android:text="FOLLOWERS"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:gravity="center|top"
+                android:textColor="@android:color/darker_gray"
+
+                />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            >
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:padding="8dp"
+                android:id="@+id/imageView_profile"
+                app:shapeAppearanceOverlay ="@style/circleImageView"
+                android:tint="@android:color/black"
+                android:background="@color/colorGray"/>
+
+            <TextView
+                android:id="@+id/txt_image_initials"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="JJJ"
+                android:textSize="25dp"
+                android:fontFamily="@font/sans_regular"
+                android:textColor="@android:color/black"
+                android:layout_gravity="center"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"/>
+
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:weightSum="2"
+            >
+
+            <TextView
+                android:id="@+id/txt_posts"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="0"
+                android:fontFamily="@font/sans_regular"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:gravity="center|bottom"
+                android:textColor="@android:color/black"
+
+                />
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/sans_regular"
+                android:text="POSTS"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:gravity="center|top"
+                android:textColor="@android:color/darker_gray"
+
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profile_pic"
+        android:id="@+id/name"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:weightSum="2">
+        <TextView
+            android:id="@+id/txt_user_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="MUKUL JAIN"
+            android:fontFamily="@font/sans_regular"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/txt_user_email"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginTop="5dp"
+            android:text="jmukul00@gmail.com"
+            android:fontFamily="@font/sans_regular"
+            android:drawableLeft="@drawable/ic_baseline_email_24"
+            android:drawableTint="@android:color/darker_gray"
+            android:gravity="center"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+</RelativeLayout>
